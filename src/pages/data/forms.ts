@@ -1,0 +1,108 @@
+import { AllQuestions } from '../../components/forms/types';
+
+export const testQuestions: AllQuestions[] = [
+  {
+    id: '1',
+    type: 'numeric',
+    title: 'What is the third positive primary number?',
+    correct_answer: 5,
+    required: true,
+    points: 1,
+  },
+  {
+    id: '2',
+    type: 'true_false',
+    title: 'The Earth is a satelite?',
+    correct_answer: false,
+    required: true,
+    points: 1,
+  },
+  {
+    id: '21',
+    type: 'yes_no',
+    title: 'Do you like cheeze?',
+    points: 1,
+  },
+  {
+    id: '3',
+    type: 'checkbox',
+    title: 'Which of the statements is correct?',
+    text: 'You can select multiple options.',
+    options: ['The Earth is bigger than Moon.', 'Mars is closer to the Sun.', 'Venus is an Egyptian goddess.'],
+    correct_answer: [0, 1],
+  },
+  {
+    id: '4',
+    type: 'dropdown',
+    title: 'What is your favorite color sheme?',
+    options: ['Light', 'Dark'],
+  },
+  {
+    id: '5',
+    type: 'radio',
+    title: "Which animal doesn't belong to the list below?",
+    options: ['Dog', 'Cat', 'Mouse', 'Bird'],
+    correct_answer: [3],
+    points: 1,
+  },
+  {
+    id: '6',
+    type: 'likert',
+    title: 'Chocolate ice cream is delicios. (agreement)',
+    labels: ['Strongly Agree', 'Agree', 'Undecided', 'Disagree', 'Strongly Disagree'],
+  },
+  {
+    id: '7',
+    type: 'likert',
+    title: 'Would often do you use the public transport? (frequency)',
+    labels: ['Always', 'Often', 'Sometimes', 'Rarely', 'Never'],
+  },
+  {
+    id: '8',
+    type: 'likert',
+    title: 'How important for you is to have all-in-one platform? (importance)',
+    labels: ['Very Important', 'Important', 'Moderately Important', 'Slightly Important', 'Unimportant'],
+  },
+  {
+    id: '9',
+    type: 'quality',
+    title: 'How satisfied are you with the service being provided to you??',
+  },
+  {
+    id: '10',
+    type: 'likert',
+    title: 'Would you recommend our company to your friends? (likelihood)',
+    labels: ['Definitely', 'Probably', 'Possibly', 'Probably Not', 'Definitely Not'],
+  },
+  {
+    id: '11',
+    type: 'mood',
+    title: 'Rate your experience with our service',
+  },
+  {
+    id: '12',
+    type: 'slider',
+    title: 'Choose your t-shirt size',
+    marks: [
+      { value: 0, label: 'XS' },
+      { value: 25, label: 'S' },
+      { value: 50, label: 'M' },
+      { value: 75, label: 'L' },
+      { value: 100, label: 'XL' },
+    ],
+    step: 25,
+  },
+  {
+    id: '13',
+    type: 'range',
+    title: 'How much you are willing to pay for a phone (in €)',
+    min: 0,
+    max: 2000,
+    step: 100,
+  },
+  {
+    id: '14',
+    type: 'text',
+    title: 'Is there anything else you would like to share?',
+  },
+];
